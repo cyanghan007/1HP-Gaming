@@ -2,8 +2,14 @@
 const express = require('express')
 require('dotenv').config()
 const app = express()
+const mongoose = require('mongoose')
+const methodOverride = require('method-override')
+// Importing modules folder
+const Product = require('./models/consoles')
+const consoleData = require('./utilities/consolesData')
 // Setting up port
 const port = process.env.PORT || 3003
+
 
 //setting up our views
 app.set('view engine', 'jsx')
