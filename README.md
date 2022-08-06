@@ -13,10 +13,10 @@ PUT | /api/v1/photos/:id | edit/update game|
 DELETE | /api/v1/photos/:id | delete a game if not avaiable |
 
 ### Softwares Used
-Javascript
-Node.js
-React
-Mongoosedb
-Express.js
-HTML5
-CSS
+- Javascript
+- Node.js
+- React
+- Mongoosedb
+- Express.js
+- HTML5
+- CSS

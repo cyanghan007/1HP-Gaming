@@ -1,0 +1,25 @@
+{
+  "name": "project-shop",
+  "version": "1.0.0",
+  "description": "This project is for my Per Scholas bootcamp. Goal is to create an online shop that is fully functional.\r ## **Routes**\r    VERB \t\t | \t\t  PATH \t\t |  \t DESCRIPTION\r ------------ | ------------- | -------------------\r GET | /api/vi/ | Home page directory of stock |\r GET | /api/v1/game/ | show page for avaiable games |\r GET | /api/v1/game/new | page to add games|\r POST | /api/v1/game/ | post games into show page |\r GET | /api/v1/game/:id/edit | page to edit a selected game |\r PUT | /api/v1/photos/:id | edit/update game|\r DELETE | /api/v1/photos/:id | delete a game if not avaiable |",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyanghan007/1HP-Gaming.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyanghan007/1HP-Gaming/issues"
+  },
+  "homepage": "https://github.com/cyanghan007/1HP-Gaming#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  }
+}
