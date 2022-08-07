@@ -2,7 +2,7 @@
 const mongoose = require('mongoose')
 
 // format for pokemon data
-const consolesSchema = new mongoose.Schema({
+const gameConsolesSchema = new mongoose.Schema({
     name: { type: String, required: true },
     image: { type: String, required: true },
     description: { type: String, required: true },
@@ -10,7 +10,7 @@ const consolesSchema = new mongoose.Schema({
     price: { type: String, required: true },
 })
 
-const Console = mongoose.model('Console', consolesSchema)
+const GameConsoles = mongoose.model('GamingConsoles', gameConsolesSchema)
 
 // exporting out pokemon.js file into server.js
-module.exports = Console
+module.exports = GameConsoles
