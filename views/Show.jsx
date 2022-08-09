@@ -16,7 +16,7 @@ const myStyle2 = {
   height: '100vh',
 }
 
-class Index extends React.Component {
+class Show extends React.Component {
     render(){
         return(
             <html>
@@ -24,16 +24,16 @@ class Index extends React.Component {
                 <title>Gamers-HQ</title>
             </head>
             <body>
-                <h1>1HP-Gaming</h1><br/>
-                <h2>Click a Gaming Console to view!</h2>
+                <h1>Gamers-HQ</h1><br/>
+                <h2>Click a Game Console to view!</h2>
                 <a href="/"><button><h3>Back to Main Directory!</h3></button></a><br/>
             </body>
             </html>
         )
-    };
-};
+    }
+}
 
-module.exports = Index;
+module.exports = Show
 
 
 // const button = {

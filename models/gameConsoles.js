@@ -11,6 +11,6 @@ const gameConsolesSchema = new mongoose.Schema({
     price: { type: String, required: true },
 })
 
-const GameConsoles = mongoose.model('gameConsoles', gameConsolesSchema)
+const GameConsoles = mongoose.model('GameConsoles', gameConsolesSchema)
 
 module.exports = GameConsoles

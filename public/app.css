@@ -1,0 +1,11 @@
+body {
+    color: '#F0FF33',
+    backgroundimage: url(https://cdn.wallpapersafari.com/0/71/pB3goh.jpg),
+    backgroundSize: "cover",
+    backgroundRepeat: "no repeat",
+    height: "100vh"
+}
+  
+.container {
+    padding: 100px;
+}

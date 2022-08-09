@@ -30,13 +30,16 @@ app.set('view engine', 'jsx')
 //Initialzing my engine
 app.engine('jsx', require('express-react-views').createEngine()) 
 
+// Seed route
+app.get('/api/vi/gameconsoles/seed', async (req,res) => {
+    await GameConsoles.deleteMany({})
+    await GameConsoles.create(gameConsolesData)
+    res.redirect('/api/vi/gameconsoles/')
+})
+
 // Home page 
 app.get('/api/vi/Gamers-HQ/', (req, res) => {
-    GameConsoles.find({}, (error, allGameConsoles) => {
-        res.render('Home', {
-            gameconsoles: allGameConsoles
-        })
-    })
+   res.render('Home')
 })
 
 // Grabbing consoles to display products
@@ -48,24 +51,29 @@ app.get('/api/vi/gameconsoles/', (req, res) => {
     })
 })
 
-// Takes to new page and does not render link on this page
-// app.get('/api/vi/nintendo/', (req, res) => {
-//     Nintendo.find({}, (error, allnintendo) => {
-//         res.render('Home', {
-//             nintendo: allnintendo
-//         })
-//     })
-// })
+app.get('/api/vi/gameconsoles/new', (req, res) => {
+    res.render('New')
+})
+
+app.post('/api/vi/gameconsoles/', (req, res) => {
+    let name = req.body.name.split('')
+    name[0] = name[0].toUpperCase()
+    req.body.name = name.join('')
+
+    GameConsoles.create(req.body, (err, createdGameConsole) => {
+        res.redirect('/api/vi/gameconsoles/')
+    })
+})
+
 
 // Show route for console game products
-app.get('/gamingConsoles/:id', (req, res) => {
-    GamingConsole.findById(req.params.id, (err, foundGameConsole) => {
+app.get('/api/vi/gameConsoles/:id', (req, res) => {
+    GameConsoles.findById(req.params.id, (err, foundGameConsole) => {
         res.render('Show', {
             gameconsole: foundGameConsole
         })
     })
  })
-
 
 // My port
 app.listen(port,() => {
