@@ -1,5 +1,5 @@
 const React = require('react');
-const gamingconsole = require('../models/gameConsoles')
+const gameConsoles = require('../models/gameConsoles')
 
 const myStyle = {
     color: '#F0FF33',
@@ -31,6 +31,10 @@ const myStyle = {
                           <li>
                             <a href={`/api/vi/gameConsoles/${gameConsoles.id}`}>
                               {gameConsoles.name.charAt(0).toUpperCase() + gameConsoles.name.slice(1)}
+                              {gameConsoles.name}
+                              {gameConsoles.description}
+                              {gameConsoles.stock}
+                              {gameConsoles.price}
                               <form action={`/api/vi/gameConsoles/${gameConsoles.id}?_method=DELETE`} method='POST'><button type="submit">Delete</button>
                               </form>
                               <a href={`/api/vi/gameConsoles/${gameConsoles.id}/edit`}>Edit pokemon</a>

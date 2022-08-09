@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const methodOverride = require('method-override')
 // Importing modules folder
 const GameConsoles = require('./models/gameConsoles')
-const gameconsolesData = require('./utilities/gameConsolesData')
+const gameConsolesData = require('./utilities/gameConsolesData')
 // Setting up port
 const port = process.env.PORT || 3003
 
@@ -31,8 +31,12 @@ app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine()) 
 
 // Home page 
-app.get('/api/vi/1HP-Gaming/', (req, res) => {
-    res.render('Home')
+app.get('/api/vi/Gamers-HQ/', (req, res) => {
+    GameConsoles.find({}, (error, allGameConsoles) => {
+        res.render('Home', {
+            gameconsoles: allGameConsoles
+        })
+    })
 })
 
 // Grabbing consoles to display products
@@ -43,6 +47,15 @@ app.get('/api/vi/gameconsoles/', (req, res) => {
         })
     })
 })
+
+// Takes to new page and does not render link on this page
+// app.get('/api/vi/nintendo/', (req, res) => {
+//     Nintendo.find({}, (error, allnintendo) => {
+//         res.render('Home', {
+//             nintendo: allnintendo
+//         })
+//     })
+// })
 
 // Show route for console game products
 app.get('/gamingConsoles/:id', (req, res) => {
@@ -57,5 +70,5 @@ app.get('/gamingConsoles/:id', (req, res) => {
 // My port
 app.listen(port,() => {
     // This will create a hyperlink in the terminal that will take you straight to the page
-    console.log(`I am listening on http://localhost:${port}/api/vi/1HP-Gaming/`) 
+    console.log(`I am listening on http://localhost:${port}/api/vi/Gamers-HQ/`) 
 })

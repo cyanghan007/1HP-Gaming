@@ -1,4 +1,5 @@
-const React = require('react');
+const React = require('react')
+// const GameConsoles = require('../models/gameconsoles')
 
 const myStyle = {
     color: '#F0FF33',
@@ -16,17 +17,35 @@ const myStyle = {
     flexDirection: 'column',
   }
 
-class Index extends React.Component {
+class Home extends React.Component {
     render() {
-        const { gamingconsole } = this.props
+        const { gameconsoles } = this.props
             return(    
                 <div style={{...myStyle,...myStyle2 }}>
-                    <h1>Welcome to 1HP-Gaming</h1><br/>
-                    <h2>Select a Game Console to view</h2><br/>
-                        <a href="/api/vi/gameconsoles/"><button>Click</button></a>                   
+                    <hr></hr>
+                    <h1>Welcome to Gamers-HQ</h1><br/>
+                    <h2>Select a Brand to view</h2><br/>
+                    <hr></hr>
+                    {/* <ul>
+                      {gameconsoles.map((gameconsole) => {
+                        return (
+                          <li>
+                            <a href={`/api/vi/nintendo/${gameconsole.id}`}>
+                                {gameconsole.name}
+                            </a>
+                      
+                        <a href="/api/vi/nintendo/">
+                            <img src="https://simg.nicepng.com/png/small/21-218635_nintendo-logo-white-png-metal.png"></img>
+                        </a>
+                        <br/>
+                        <a href="/api/vi/gameconsoles/"><button>Click</button></a>
+                        </li>
+                    )
+                })}
+                    </ul>                  */}
                 </div>     
         )
     };
 };
 
-module.exports = Index;
+module.exports = Home;
