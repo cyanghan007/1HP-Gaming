@@ -30,7 +30,7 @@ const horzLine = {
 class Index extends React.Component {
   render() {
     const { gameconsoles } = this.props
-    console.log(gameConsoles)
+    console.log(gameconsoles)
       return (
         <div style = {{...myStyle,...myStyle2}}>
           <hr style = {{...horzLine}}/> 
@@ -39,14 +39,11 @@ class Index extends React.Component {
           <hr style = {{...horzLine}}/> 
             <ul>
               {gameconsoles.map((gameConsoles) => {
+                console.log(gameConsoles)
                 return (
                   <li>
                     <a href={`/api/vi/gameconsoles/${gameConsoles.id}`}>
                       {gameConsoles.name.charAt(0).toUpperCase() + gameConsoles.name.slice(1)}
-                      {gameConsoles.brand}
-                      {gameConsoles.description}
-                      {gameConsoles.stock}
-                      {gameConsoles.price}
                       <form action={`/api/vi/gameConsoles/${gameConsoles.id}?_method=DELETE`} method='POST'><button type="submit">Delete</button>
                       </form>
                       <a href={`/api/vi/gameConsoles/${gameConsoles.id}/edit`}>Edit Game Console</a>
@@ -57,7 +54,7 @@ class Index extends React.Component {
                     </ul>
                     <nav>
                       <a href="/api/vi/gameConsoles/new">
-                        <button>Add new game to Inventory</button>
+                        <button>Add a Console to Inventory</button>
                       </a>
                     </nav>  
          </div>        

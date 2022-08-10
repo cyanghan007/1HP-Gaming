@@ -28,13 +28,13 @@ class New extends React.Component {
         return (
             <div style = {{...myStyle,...myStyle2}}>
                 {/* <hr style = {{...horzLine}}/> */}
-                <h1>What's New</h1>
+                <h1>What's New?</h1>
                 <hr style = {{...horzLine}}/>
                 {/* NOTE: action will be the route, method will be the HTTP verb */}
                 <form action="/api/vi/gameconsoles/" method="POST">
+                  Image: <input type="text" name="img" /><br/><br/>
                   Name: <input type="text" name="name" /><br/><br/>
                   Brand: <input type="text" name="name" /><br/><br/>
-                  Image: <input type="text" name="img" /><br/><br/>
                   Description: <input type="text" name="name" /><br/><br/>
                   Stock: <input type="text" name="name" /><br/><br/>
                   Price: <input type="text" name="name" /><br/><br/>

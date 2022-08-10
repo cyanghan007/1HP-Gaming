@@ -16,6 +16,15 @@ const myStyle2 = {
   height: '100vh',
 }
 
+const horzLine = {
+    backGround: 'black',
+    color: 'black',
+    borderColor: 'white',
+    height: '5px',
+    size: '20px',
+    width: "1000px",
+}
+
 class Show extends React.Component {
     render(){
         return(
@@ -26,7 +35,7 @@ class Show extends React.Component {
             <body>
                 <h1>Gamers-HQ</h1><br/>
                 <h2>Click a Game Console to view!</h2>
-                <a href="/"><button><h3>Back to Main Directory!</h3></button></a><br/>
+                <a href="/api/vi/gameconsoles"><button><h3>Back to Main Directory!</h3></button></a><br/>
             </body>
             </html>
         )
