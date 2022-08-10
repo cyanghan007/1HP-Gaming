@@ -68,13 +68,15 @@ app.post('/api/vi/gameconsoles', (req, res) => {
 // Show route for console game products
 app.get('/api/vi/gameconsoles/:id', (req, res) => {
     GameConsoles.findById(req.params.id, (err, foundGameConsole) => {
+        // console.log(req.params.id)
+        // console.log(foundGameConsole)
         res.render('Show', {
             gameconsole: foundGameConsole
         })
     })
  })
 
- app.get('/api/vi/pgameconsoles/:id/edit', (req,res) => {
+ app.get('/api/vi/gameconsoles/:id/edit', (req,res) => {
     GameConsoles.findById(req.params.id, (error, foundGameConsole) => {
         if(!error) {
             res.render('Edit', {

@@ -30,16 +30,14 @@ const horzLine = {
 class Index extends React.Component {
   render() {
     const { gameconsoles } = this.props
-    console.log(gameconsoles)
       return (
         <div style = {{...myStyle,...myStyle2}}>
           <hr style = {{...horzLine}}/> 
-          <h1>Avaiable Game Consoles</h1>
-          <h2>Select a game console to View</h2>
+          <h1> Avaiable Game Consoles </h1>
+          <h2> Select a game console to View </h2>
           <hr style = {{...horzLine}}/> 
             <ul>
               {gameconsoles.map((gameConsoles) => {
-                console.log(gameConsoles)
                 return (
                   <li>
                     <a href={`/api/vi/gameconsoles/${gameConsoles.id}`}>

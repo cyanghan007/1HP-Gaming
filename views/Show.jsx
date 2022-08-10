@@ -27,43 +27,33 @@ const horzLine = {
 
 class Show extends React.Component {
     render(){
-        return(
-            <html>
-            <head>
+        const gameConsoles = this.props.gameconsole
+        console.log(gameConsoles)
+            return(
+                <html>
+                <head>
                 <title>Gamers-HQ</title>
-            </head>
-            <body>
-                <h1>Gamers-HQ</h1><br/>
-                <h2>Click a Game Console to view!</h2>
-                <a href="/api/vi/gameconsoles"><button><h3>Back to Main Directory!</h3></button></a><br/>
-            </body>
-            </html>
+                </head>
+                <body>
+                    <div style = {{...myStyle,...myStyle2}}>
+                        <hr style = {{...horzLine}}/>
+                        <h1> Gamers-HQ </h1><br/>
+                        <h2> {gameConsoles.name.charAt(0).toUpperCase() + gameConsoles.name.slice(1)} </h2>
+                        {/* <h3>{gameConsoles.image}</h3>
+                        <img src={gameConsoles.image}> </img> */}
+                        <h4>
+                            {/* {gameConsoles.brand} */}
+                            {gameConsoles.description}
+                            {gameConsoles.stock}
+                            {gameConsoles.price}
+                        </h4>
+                        <hr style = {{...horzLine}}/>
+                        <a href="/api/vi/gameconsoles"><button><h5>Back to Main Directory!</h5></button></a>
+                    </div>   
+                </body>
+                </html>
         )
     }
 }
 
 module.exports = Show
-
-
-// const button = {
-//   borderRadius: '25px',
-//   backgroundColor: '#FFCC00',
-// }
-//     class Show extends React.Component {
-//       render() {
-//         const gamingconsole = this.props
-//           return (
-//                   <div style = {{...myStyle,...myStyle2}}>
-//                       <h1> "1HP-Gaming" </h1>
-//                       <h2> {gamingconsole.name.charAt(0).toUpperCase() + gamingconsole.name.slice(1)}</h2>
-//                       <img src={gamingconsole.img}></img>
-//                       <br/>
-//                       <a href={/console/}>
-//                         <button>Back</button>
-//                       </a>  
-//                   </div>
-//           )
-//       }
-//     }
-
-// module.exports = Show
