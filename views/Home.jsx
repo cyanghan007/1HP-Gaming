@@ -26,7 +26,6 @@ const horzLine = {
     width: "1000px",
 }
 
-
 class Home extends React.Component {
     render() {
         const { gameConsoles } = this.props
@@ -39,22 +38,6 @@ class Home extends React.Component {
                     <a href="/api/vi/gameconsoles/">
                       <img src="/images/controller.gif"></img>
                     </a>
-                    {/* <ul>
-                      {gameconsoles.map((gameconsole) => {
-                        return (
-                          <li>
-                            <a href={`/api/vi/gameconsoles/${gameconsole.id}`}>
-                                {gameconsole.name}
-                            </a>    
-                          <a href="/api/vi/gameconsoles/">
-                            <img src="https://simg.nicepng.com/png/small/21-218635_nintendo-logo-white-png-metal.png"></img>
-                          </a>
-                          <br/>
-                          <a href="/api/vi/gameconsoles/"><button>Click</button></a>
-                          </li>
-                        )
-                      })}
-                    </ul>                  */}
                 </div>     
               )
         }

@@ -28,7 +28,6 @@ const horzLine = {
 class Show extends React.Component {
     render(){
         const gameConsoles = this.props.gameconsole
-        console.log(gameConsoles)
             return(
                 <html>
                 <head>
@@ -39,16 +38,16 @@ class Show extends React.Component {
                         <hr style = {{...horzLine}}/>
                         <h1> Gamers-HQ </h1><br/>
                         <h2> {gameConsoles.name.charAt(0).toUpperCase() + gameConsoles.name.slice(1)} </h2>
-                        {/* <h3>{gameConsoles.image}</h3>
-                        <img src={gameConsoles.image}> </img> */}
-                        <h4>
+                        {/* <h3>{gameConsoles.image}</h3> */}
+                        <img src={gameConsoles.image}/>
+                        <h3>
                             {/* {gameConsoles.brand} */}
-                            {gameConsoles.description}
-                            {gameConsoles.stock}
+                            {gameConsoles.description}<br/>
+                            {gameConsoles.stock}<br/>
                             {gameConsoles.price}
-                        </h4>
+                        </h3>
                         <hr style = {{...horzLine}}/>
-                        <a href="/api/vi/gameconsoles"><button><h5>Back to Main Directory!</h5></button></a>
+                        <a href="/api/vi/gameconsoles"><button><h4>Back to Main Directory!</h4></button></a>
                     </div>   
                 </body>
                 </html>

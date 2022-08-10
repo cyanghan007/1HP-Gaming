@@ -6,7 +6,8 @@ const myStyle = {
     backgroundImage: "url('https://wallpapercave.com/wp/wp2250916.jpg')",
     backgroundSize: "cover",
     backgroundRepeat: "no repeat",
-    height: "100vh"
+    height: "100vh",
+    fontSize: '1.2em'
   }
   
 const myStyle2 = {
@@ -19,8 +20,6 @@ const myStyle2 = {
 }
 
 const horzLine = {
-  backGround: 'black',
-  color: 'black',
   borderColor: 'white',
   height: '5px',
   size: '20px',

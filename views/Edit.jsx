@@ -3,8 +3,14 @@ const React = require('react')
 const myStyle = {
     color: '#ffcc00',
     backgroundColor: '#991f00',
-    fontSize: '1.3em',
+    backgroundImage: "url('https://i.pinimg.com/736x/21/24/a8/2124a84f6b5f622a2b772f5977d00636--video-game-console-video-games.jpg')",
+    backgroundSize: "cover",
+    backgroundRepeat: "no repeat",
+    height: "100vh",
+    fontSize: '1.2em'
 }
+    
+
   
 const myStyle2 = {
     display: "flex",
@@ -16,9 +22,7 @@ const myStyle2 = {
 }
 
 const horzLine = {
-    backGround: 'red',
-    color: 'red',
-    borderColor: 'red',
+    borderColor: 'white',
     height: '5px',
     size: '20px',
     width: "1000px",
