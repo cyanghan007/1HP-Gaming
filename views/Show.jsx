@@ -4,6 +4,7 @@ const React = require('react')
 const myStyle = {
   color: '##ffcc00',
   backgroundColor: '#d9d9d9',
+  fontSize: '15px',
 }
 
 // Background Styling
@@ -36,7 +37,7 @@ class Show extends React.Component {
                 <body>
                     <div style = {{...myStyle,...myStyle2}}>
                         <hr style = {{...horzLine}}/>
-                        <h1> Gamers-HQ </h1><br/>
+                        <h1> Free shipping on orders over $49 </h1><br/>
                         <h2> {gameConsoles.name.charAt(0).toUpperCase() + gameConsoles.name.slice(1)} </h2>
                         {/* <h3>{gameConsoles.image}</h3> */}
                         <img src={gameConsoles.image}/>
