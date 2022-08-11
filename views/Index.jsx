@@ -43,7 +43,7 @@ class Index extends React.Component {
                       {gameConsoles.name.charAt(0).toUpperCase() + gameConsoles.name.slice(1)}
                       <form action={`/api/vi/gameConsoles/${gameConsoles.id}?_method=DELETE`} method='POST'><button type="submit">Delete</button>
                       </form>
-                      <a href={`/api/vi/gameConsoles/${gameConsoles.id}/edit`}>Edit Game Console</a>
+                      <a href={`/api/vi/gameConsoles/${gameConsoles.id}/edit`}><button>Edit Game Console</button></a>
                       </a>
                   </li>
                       )

@@ -43,6 +43,7 @@ class Show extends React.Component {
                 <html>
                 <head>
                 <title>Gamers-HQ</title>
+                <link rel="stylesheet" href="/css/app.css"></link>
                 </head>
                 <body>
                     <div style = {{...myStyle,...myStyle2}}>
@@ -51,7 +52,7 @@ class Show extends React.Component {
                         <h2> {gameConsoles.name.charAt(0).toUpperCase() + gameConsoles.name.slice(1)} </h2>
                         {/* <h3>{gameConsoles.image}</h3> */}
                         <img src={gameConsoles.image}/>
-                        <h3>
+                        <h3 className='title'>
                             {/* {gameConsoles.brand} */}
                             {gameConsoles.description}<br/>
                             {stock}<br/>
