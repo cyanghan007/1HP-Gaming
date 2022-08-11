@@ -33,7 +33,7 @@ class Home extends React.Component {
                 <div style={{...myStyle,...myStyle2 }}>
                     {/* <hr style={{horzLine}}/> */}
                     <h1>Welcome to Gamers-HQ</h1><br/>
-                    <h2>Click Image to View Consoles</h2><br/>
+                    <h2>Click image to view consoles</h2><br/>
                     {/* <hr style={{horzLine}}/><br/> */}
                     <a href="/api/vi/gameconsoles/">
                       <img src="/images/controller.gif"></img>

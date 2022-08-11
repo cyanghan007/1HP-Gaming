@@ -34,7 +34,7 @@ class Edit extends React.Component {
         return (
             <div style={{...myStyle,...myStyle2}}>
                 <hr style={{...horzLine}}/>
-                <h1>Edit Game Console</h1>
+                <h1>Edit game console</h1>
                 <hr style={{...horzLine}}/>
                 {/* NOTE: action will be the route, method will be the HTTP verb */}
                 <form action={`/api/vi/gameconsoles/${gameConsoles.id}?_method=PUT`} method="POST">

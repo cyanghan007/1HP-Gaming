@@ -32,8 +32,8 @@ class Index extends React.Component {
       return (
         <div style = {{...myStyle,...myStyle2}}>
           <hr style = {{...horzLine}}/> 
-          <h1> Avaiable Game Consoles </h1>
-          <h2> Select a game console to View </h2>
+          <h1> Available game consoles </h1>
+          <h2> Select a game console to view </h2>
           <hr style = {{...horzLine}}/> 
             <ul>
               {gameconsoles.map((gameConsoles) => {
@@ -51,7 +51,7 @@ class Index extends React.Component {
                     </ul>
                     <nav>
                       <a href="/api/vi/gameConsoles/new">
-                        <button>Add a Console to Inventory</button>
+                        <button>Add a console to inventory</button>
                       </a>
                     </nav>  
          </div>        
