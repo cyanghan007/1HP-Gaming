@@ -47,6 +47,8 @@ class Show extends React.Component {
                             {gameConsoles.price}
                         </h3>
                         <hr style = {{...horzLine}}/>
+                        <h4><button>Buy</button></h4>
+                        <br/>
                         <a href="/api/vi/gameconsoles"><button><h4>Back to Main Directory!</h4></button></a>
                     </div>   
                 </body>

@@ -37,14 +37,14 @@ class Edit extends React.Component {
                 <h1>Edit Game Console</h1>
                 <hr style={{...horzLine}}/>
                 {/* NOTE: action will be the route, method will be the HTTP verb */}
-                <form action={`/api/vi/gameconoles${gameConsoles.id}?_method=PUT`} method="POST">
+                <form action={`/api/vi/gameconsoles/${gameConsoles.id}?_method=PUT`} method="POST">
                   Name: <input type="text" name="name" /><br/><br/>
-                  Image: <input type="text" name="img" /><br/><br/>
-                  Brand: <input type="text" name="img" /><br/><br/>
-                  Description: <input type="text" name="img" /><br/><br/>
-                  Stock: <input type="text" name="img" /><br/><br/>
-                  Price: <input type="text" name="img" /><br/><br/>
-                  <input type="submit" name="" value="Edit Game Console in Inventory"/>
+                  Image: <input type="text" name="image" /><br/><br/>
+                  {/* Brand: <input type="text" name="img" /><br/><br/> */}
+                  Description: <input type="text" name="description" /><br/><br/>
+                  Stock: <input type="text" name="stock" /><br/><br/>
+                  Price: <input type="text" name="price" /><br/><br/>
+                  <input type="submit" name="" value="Add Edited Game Console to Inventory"/>
                   <br/>
                   {/* <br/>
                   <img src="https://i.imgur.com/jQCyhH0.gif"></img> */}

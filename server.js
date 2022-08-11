@@ -56,9 +56,9 @@ app.get('/api/vi/gameconsoles/new', (req, res) => {
 })
 
 app.post('/api/vi/gameconsoles', (req, res) => {
-    let name = req.body.name.split('')
-    name[0] = name[0].toUpperCase()
-    req.body.name = name.join('')
+    // let name = req.body.name.split('')
+    // name[0] = name[0].toUpperCase()
+    // req.body.name = name.join('')
 
     GameConsoles.create(req.body, (err, createdGameConsole) => {
         res.redirect('/api/vi/gameconsoles')
@@ -94,15 +94,15 @@ app.get('/api/vi/gameconsoles/:id', (req, res) => {
 app.put('/api/vi/gameconsoles/:id', (req, res) => {
     GameConsoles.findByIdAndUpdate(req.params.id, req.body, {
         new: true
-    }, (error, gameconsole) => {
-        res.redirect(`/api/vi/gameconsoles${req.params.id}`)
+    }, (error, GameConsole) => {
+        res.redirect(`/api/vi/gameconsoles/${req.params.id}`)
     })
 })
 
 //  Delete route
 app.delete('/api/vi/gameconsoles/:id', (req, res) => {
     GameConsoles.findByIdAndRemove(req.params.id, (err, data) => {
-        res.redirect('/ape/vi/gameconsoles')
+        res.redirect('/api/vi/gameconsoles')
     })
 })
 

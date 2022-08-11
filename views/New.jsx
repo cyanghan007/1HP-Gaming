@@ -34,7 +34,7 @@ class New extends React.Component {
                 <form action="/api/vi/gameconsoles/" method="POST">
                   Name: <input type="text" name="name" /><br/><br/>
                   Image: <input type="text" name="img" /><br/><br/>
-                  Brand: <input type="text" name="name" /><br/><br/>
+                  {/* Brand: <input type="text" name="name" /><br/><br/> */}
                   Description: <input type="text" name="name" /><br/><br/>
                   Stock: <input type="text" name="name" /><br/><br/>
                   Price: <input type="text" name="name" /><br/><br/>
