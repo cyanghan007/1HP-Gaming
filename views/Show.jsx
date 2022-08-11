@@ -29,6 +29,16 @@ const horzLine = {
 class Show extends React.Component {
     render(){
         const gameConsoles = this.props.gameconsole
+        let btn;
+        let stock;
+        if(gameConsoles.stock == 0){ 
+            btn = null;
+            stock = 'outofstock';
+        } else {
+            btn = <button>Buy</button>
+            stock = gameConsoles.stock
+        }
+        
             return(
                 <html>
                 <head>
@@ -44,11 +54,11 @@ class Show extends React.Component {
                         <h3>
                             {/* {gameConsoles.brand} */}
                             {gameConsoles.description}<br/>
-                            {gameConsoles.stock}<br/>
+                            {stock}<br/>
                             {gameConsoles.price}
                         </h3>
                         <hr style = {{...horzLine}}/>
-                        <h4><button>Buy</button></h4>
+                        { btn }
                         <br/>
                         <a href="/api/vi/gameconsoles"><button><h4>Back to Main Directory!</h4></button></a>
                     </div>   
