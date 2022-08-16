@@ -20,3 +20,12 @@ DELETE | /api/v1/gameconsoles/:id | delete a consoles if not avaiable |
 - Express.js
 - HTML5
 - CSS
+
+### Future updates
+- Add more styling effects
+- Make website be more like a large company site
+- Drop down menu
+- Navigation bar
+- Search bar
+- Add to cart
+- Add more products
