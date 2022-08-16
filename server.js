@@ -31,11 +31,11 @@ app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine()) 
 
 // Seed route // comment out before deploying
-// app.get('/api/vi/gameconsoles/seed', async (req,res) => {
-//     await GameConsoles.deleteMany({})
-//     await GameConsoles.create(gameConsolesData)
-//     res.redirect('/api/vi/gameconsoles')
-// })
+app.get('/api/vi/gameconsoles/seed', async (req,res) => {
+    await GameConsoles.deleteMany({})
+    await GameConsoles.create(gameConsolesData)
+    res.redirect('/api/vi/gameconsoles')
+})
 
 // Home page 
 app.get('/api/vi/Gamers-HQ', (req, res) => {
