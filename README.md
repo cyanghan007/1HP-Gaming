@@ -1,4 +1,5 @@
 # Gamers-HQ
+Get all your gaming needs here, @Gamers-HQ!
 ## Project Description
 This is my second project for Per Scholas, goal is to create a fully deployed online website store as the final result.
 ## **Routes**

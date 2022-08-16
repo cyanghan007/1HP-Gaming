@@ -47,10 +47,10 @@ class Show extends React.Component {
                 </head>
                 <body>
                     <div className='body1'>
-                        <hr style = {{...horzLine}}/>
+                        <hr style = {{...horzLine}}/><br/>
                         <h1> Free shipping on orders over $49 </h1><br/>
-                        <h2> {gameConsoles.name.charAt(0).toUpperCase() + gameConsoles.name.slice(1)} </h2>
-                        <hr style = {{...horzLine}}/>
+                        <h2> {gameConsoles.name.charAt(0).toUpperCase() + gameConsoles.name.slice(1)} </h2><br/>
+                        <hr style = {{...horzLine}}/><br/>
                         {/* <h3>{gameConsoles.image}</h3> */}
                         <img src={gameConsoles.image}/>
                         <h3 className='description'>
@@ -58,7 +58,7 @@ class Show extends React.Component {
                             {gameConsoles.description}<br/>
                             {stock}<br/>
                             {gameConsoles.price}
-                        </h3>
+                        </h3><br/>
                         { btn }
                         <br/>
                         <form action={`/api/vi/gameConsoles/${gameConsoles.id}?_method=DELETE`} method='POST'><button type="submit" className='btn'>Delete</button>

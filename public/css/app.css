@@ -1,6 +1,6 @@
 .body {
     color: #F0FF33;
-    background-image: url('https://cdn.wallpapersafari.com/0/71/pB3goh.jpg');
+    background-image: url('https://cutewallpaper.org/27/awesome-android-gamer-phone-wallpaper/gaming-pc-wallpaper-hd-wallpapers-for-tech-computer-wallpaper.png');
     background-size: cover;
     background-repeat: no repeat;
     height: 100vh;
@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    font-size: 1.2em;
 }
 
 .body1 {
@@ -26,16 +27,30 @@
 
 .container {
     color: #F0FF33;
-    background-image: url('https://wallpapercave.com/wp/wp2250916.jpg');
+    background-image: url('https://cutewallpaper.org/27/awesome-android-gamer-phone-wallpaper/gaming-pc-wallpaper-hd-wallpapers-for-tech-computer-wallpaper.png');
     background-size: cover;
     background-repeat: no repeat;
     height: 100vh;
-    font-size: 1.2em;
     display: flex;
     text-align: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
+}
+
+.h1index {
+    font-size: 1.1em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.h2index {
+    font-size: 1.1em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .h3 {
@@ -51,6 +66,49 @@
     justify-content: space-around;
     flex-wrap: wrap;
     height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.body-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.nav {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 13px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+
+.nav a.active {
+    color: white;
 }
 
 .description {
@@ -69,8 +127,14 @@ a :hover {
     box-shadow: 0 0 35px;
 }
 
+
 /* a :before {
     content: '';
     position: absolute;
     inset: 2px;
 } */
+.h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
