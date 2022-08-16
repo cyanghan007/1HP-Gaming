@@ -35,7 +35,7 @@ class Show extends React.Component {
             btn = null;
             stock = 'outofstock';
         } else {
-            btn = <button>Buy</button>
+            btn = <button className='btn'>Buy</button>
             stock = gameConsoles.stock
         }
         
@@ -46,22 +46,27 @@ class Show extends React.Component {
                 <link rel="stylesheet" href="/css/app.css"></link>
                 </head>
                 <body>
-                    <div style = {{...myStyle,...myStyle2}}>
+                    <div className='body1'>
                         <hr style = {{...horzLine}}/>
                         <h1> Free shipping on orders over $49 </h1><br/>
                         <h2> {gameConsoles.name.charAt(0).toUpperCase() + gameConsoles.name.slice(1)} </h2>
+                        <hr style = {{...horzLine}}/>
                         {/* <h3>{gameConsoles.image}</h3> */}
                         <img src={gameConsoles.image}/>
-                        <h3 className='title'>
+                        <h3 className='description'>
                             {/* {gameConsoles.brand} */}
                             {gameConsoles.description}<br/>
                             {stock}<br/>
                             {gameConsoles.price}
                         </h3>
-                        <hr style = {{...horzLine}}/>
                         { btn }
                         <br/>
-                        <a href="/api/vi/gameconsoles"><button><h4>Back to Main Directory!</h4></button></a>
+                        <form action={`/api/vi/gameConsoles/${gameConsoles.id}?_method=DELETE`} method='POST'><button type="submit" className='btn'>Delete</button>
+                        </form>
+                        <br/>
+                        <a href={`/api/vi/gameConsoles/${gameConsoles.id}/edit`}><button className='btn'>Edit Game Console</button></a>
+                        <br/>
+                        <a href="/api/vi/gameconsoles"><button className='btn'><h4>Back to Main Directory!</h4></button></a>
                     </div>   
                 </body>
                 </html>
