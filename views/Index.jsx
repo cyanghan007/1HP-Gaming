@@ -27,8 +27,8 @@ class Index extends React.Component {
               </header><br/>
             <div className="body">
               <hr style = {{...horzLine}}/><br/>
-              <h1 className='h1index'> Available game consoles </h1><br/>
-              <h2 className='h2index'> Select a game console to view </h2><br/>
+              <h1 className='h1index'> Available Game Consoles </h1><br/>
+              <h2 className='h2index'> (Select to View) </h2><br/>
               <hr style = {{...horzLine}}/>
               <h3 className='h3'> 
               {gameconsoles.map((gameConsoles) => {

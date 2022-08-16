@@ -41,7 +41,7 @@ const gameConsolesData = [
     },
     {
         name: "Playstation 5",
-        image: "https://www.reliancedigital.in/wp-content/uploads/2020/09/cover_PS5.jpg",
+        image: "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21",
         brand: "https://cdn.mos.cms.futurecdn.net/vjMmjtHDpyJv9tnWWEcXqb.jpg", 
         description: "Step up your gaming experience with the PlayStation 5. Enjoy lightning-fast loading with an ultra-high speed SSD, deep immersion with haptic feedback, adaptive triggers, and 3D audio. With Game Boost revisit your favorite content enhanced. Appreciate faster and smoother game rates. Play has no limits with the all-new generation of incredible PlayStation games",
         stock:"8 in stock",

@@ -7,6 +7,7 @@ class Home extends React.Component {
             return(
                 <html>
                     <head>
+                    <link rel="preconnect" href="https://fonts.googleapis.com"></link>
                     <link rel="stylesheet" href="/css/app.css"></link>
                     </head>
                     <body>
@@ -20,13 +21,16 @@ class Home extends React.Component {
                         </header><br/>
                         <nav className='body'>
                             <h1> Welcome to Gamers-HQ </h1><br/>
-                            <h2>Order today and recieve 10% off first purchase</h2><br/>
-                            <h3>Todays Hot Items!</h3><br/>
+                            <h2> Order Today and Receive 10% Off Your First Purchase! </h2><br/>
+                            <h3> Today's Hot Items: </h3><br/>
                             <br/>
-                            <h4>
-                                <img src='https://i.ytimg.com/vi/DKBK4OnvjX0/maxresdefault.jpg' width='200' height='125'/>
+                            <h4 className='h4'>
+                                <img src='https://i.ytimg.com/vi/DKBK4OnvjX0/maxresdefault.jpg' width='200' height='125' />
+                                <h5> Nintendo Switch </h5>
                                 <img src='https://m.media-amazon.com/images/S/stores-image-uploads-na-prod/b/AmazonStores/ATVPDKIKX0DER/57b0ef7d3f89c29c0c679bf79ba37eb8.w3000.h1500.jpg' width='200' height='125'/>
-                                <img src='https://helios-i.mashable.com/imagery/articles/05KssmGG3w3JoGXRM61lxIt/hero-image.fill.size_1248x702.v1657639878.png' width='200' height='125'/>     
+                                <h6> Xbox Series X </h6>
+                                <img src='https://helios-i.mashable.com/imagery/articles/05KssmGG3w3JoGXRM61lxIt/hero-image.fill.size_1248x702.v1657639878.png' width='200' height='125'/>
+                                <h6> Playstation 5 </h6>     
                             </h4>
                         </nav>
                         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
